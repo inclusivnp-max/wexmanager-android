@@ -1,0 +1,58 @@
+# Add project specific R8 rules here.
+# AGP will combine all keep rule files in src/main/keepRules to pass to R8
+#
+# For more details, see
+#   https://d.android.com/r/tools/r8/keep-rules
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+# TextMate (tm4e) и sora-editor: грамматики/темы разбираются через рефлексию.
+-keep class org.eclipse.tm4e.** { *; }
+-keep class io.github.rosemoe.sora.langs.textmate.** { *; }
+-keep class org.joni.** { *; }
+-keep class org.jcodings.** { *; }
+-dontwarn org.eclipse.tm4e.**
+-dontwarn org.jcodings.**
+-dontwarn org.joni.**
+
+# Apache Commons Compress: необязательные зависимости (brotli, zstd, asm…) не подключены.
+-dontwarn org.apache.commons.compress.**
+-dontwarn org.brotli.dec.**
+-dontwarn com.github.luben.zstd.**
+-dontwarn org.objectweb.asm.**
+-dontwarn org.osgi.**
+-dontwarn javax.annotation.**
+-dontwarn java.awt.**
+-dontwarn javax.imageio.**
+-dontwarn javax.xml.**
+
+# Сетевые протоколы: JSch (SFTP) грузит алгоритмы по имени класса, smbj использует bouncycastle/slf4j.
+-keep class com.jcraft.jsch.** { *; }
+-dontwarn com.jcraft.jsch.**
+-keep class com.hierynomus.** { *; }
+-dontwarn com.hierynomus.**
+-dontwarn net.engio.**
+-dontwarn org.slf4j.**
+-dontwarn org.bouncycastle.**
+-dontwarn javax.el.**
+-dontwarn org.ietf.jgss.**
+-dontwarn org.apache.commons.net.**
+
+# apksig: алгоритмы подписи выбираются через JCA по имени.
+-keep class com.android.apksig.** { *; }
+-dontwarn com.android.apksig.**
+
+# junrar
+-keep class com.github.junrar.** { *; }
+-dontwarn com.github.junrar.**
+-keep class net.engio.mbassy.** { *; }
+-keep class org.bouncycastle.** { *; }
+-keep class org.apache.commons.net.** { *; }
+
+# zip4j
+-keep class net.lingala.zip4j.** { *; }
+-dontwarn net.lingala.zip4j.**

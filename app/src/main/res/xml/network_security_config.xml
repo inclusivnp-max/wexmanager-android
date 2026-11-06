@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- WebDAV без HTTPS (NAS в домашней сети) включается только явным выбором в подключении,
+         редактор подключения предупреждает об открытой передаче. Сертификаты — только системные. -->
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>

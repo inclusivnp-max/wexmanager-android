@@ -1,0 +1,32 @@
+*.iml
+.gradle/
+local.properties
+/local.properties
+.DS_Store
+build/
+**/build/
+/captures
+.externalNativeBuild/
+.cxx/
+
+# IDE & Kotlin caches
+.idea/
+.kotlin/
+
+# Build artifacts & releases
+*.apk
+*.apks
+*.aab
+/app/release/
+release/
+
+# Signing keys & secrets
+*.jks
+*.keystore
+*.key
+*.p12
+/keystore.properties
+/keystore/
+
+# OS files
+Thumbs.db

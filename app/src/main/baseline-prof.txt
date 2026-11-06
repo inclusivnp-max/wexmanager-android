@@ -1,0 +1,3 @@
+# Baseline Profile: код приложения компилируется заранее (AOT) — быстрее запуск и меньше рывков.
+HSPLclient/wexmanager/**->**(**)**
+Lclient/wexmanager/**;
