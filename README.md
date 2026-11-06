@@ -1,5 +1,14 @@
 # WexManager
 
+<p align="left">
+  <img src="https://img.shields.io/badge/Android-SDK%2028+-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android SDK 28+" />
+  <img src="https://img.shields.io/badge/Kotlin-2.4-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" alt="Kotlin 2.4" />
+  <img src="https://img.shields.io/badge/Compose-Material3%20Expressive-4285F4?style=for-the-badge&logo=jetpackcompose&logoColor=white" alt="Jetpack Compose Expressive" />
+  <img src="https://img.shields.io/badge/Architecture-Dual--Pane%20Navigation%203-blue?style=for-the-badge" alt="Dual-Pane Navigation 3" />
+  <img src="https://img.shields.io/badge/Native-ripgrep%20%7C%20unrar%20%7C%20pty-E05D44?style=for-the-badge" alt="Native ripgrep and unrar" />
+  <img src="https://img.shields.io/badge/Tools-DEX%20Editor%20%7C%20ARSC%20Editor-009688?style=for-the-badge" alt="DEX and ARSC Editor" />
+</p>
+
 Двухпанельный файловый менеджер для Android в духе MT Manager — на Jetpack Compose и Material 3 Expressive.
 
 ## Возможности
